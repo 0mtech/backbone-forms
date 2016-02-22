@@ -1498,7 +1498,7 @@ Form.editors.Number = Form.editors.Text.extend({
       newVal = newVal + String.fromCharCode(event.charCode);
     }
 
-    var numeric = /^-[0-9]*\.?[0-9]*?$/.test(newVal);
+    var numeric = /^-?[0-9]*\.?[0-9]*?$/.test(newVal);
 
     if (numeric) {
       delayedDetermineChange();
